@@ -137,5 +137,5 @@ const alarmTimeShedule=()=>{
 }
 let btn=document.getElementById('alarm_btn');
 btn.addEventListener("click", alarmTimeShedule);
-let value = document.getElementById("wakeup").value;
-console.log(value);
+// let value = document.getElementById("wakeup").value;
+// console.log(value);
