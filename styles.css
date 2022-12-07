@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background: var(--unnamed-color-3d087b) 0% 0% no-repeat padding-box;
+    background: #3d087b 0% 0% no-repeat padding-box;
     background: #3D087B no-repeat padding-box;
 }
 .logo{
