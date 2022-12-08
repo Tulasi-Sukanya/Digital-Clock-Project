@@ -30,24 +30,24 @@ function displayTime(){
     document.getElementById("min").innerHTML = min 
     document.getElementById("sec").innerHTML = sec
     // based on clock messages for morning,afternoon,evening and night..
-    if(hrs <= 12 && a === "AM"){
-        var msg = "GRAB SOME HEALTHY BREAKFAST !!!";
-        var wish = "GOOD MORNING !! WAKE UP !!"
-    }
-    if((hrs >= 12 && hrs <= 3) && a === "PM"){
-        var msg = "LETS HAVE SOME LUNCH !!!";
-        var wish = "GOOD AFTERNOON !! TAKE SOME SLEEP!!"
-    }
-    if((hrs >= 4 && hrs <= 6) && a === "PM"){
-        var msg = "STAY YAWNING,GET SOME TEA.. ITS JUST EVENING!";
-        var wish = "GOOD EVENING !!!"
-    }
-    if((hrs > 7 && hrs < 12) && a === "PM"){
-        var msg = "CLOSE YOUR EYES AND GO TO SLEEP...";
-        var wish = "GOOD NIGHT !!"
-    }
-    document.getElementById("msg").innerHTML = msg;
-    document.getElementById("wish_msg1").innerHTML = wish;
+    // if((hrs >= 0 && hrs < 12 ) && a === "AM"){
+    //     var msg = "GRAB SOME HEALTHY BREAKFAST !!!";
+    //     // var wish = "GOOD MORNING !! WAKE UP !!"
+    // }
+    // if((hrs >= 12 && hrs <= 3) && a === "PM"){
+    //     var msg = "LETS HAVE SOME LUNCH !!!";
+    //     // var wish = "GOOD AFTERNOON !! TAKE SOME SLEEP!!"
+    // }
+    // if((hrs >= 4 && hrs <= 6) && a === "PM"){
+    //     var msg = "STAY YAWNING,GET SOME TEA.. ITS JUST EVENING!";
+    //     // var wish = "GOOD EVENING !!!"
+    // }
+    // if((hrs >= 7 && hrs <= 11) && a === "PM"){
+    //     var msg = "CLOSE YOUR EYES AND GO TO SLEEP...";
+    //     // var wish = "GOOD NIGHT !!"
+    // }
+    // document.getElementById("msg").innerHTML = msg;
+    // document.getElementById("wish_msg1").innerHTML = wish;
 }
 setInterval(displayTime,1000);
 
@@ -74,26 +74,36 @@ const changeimage = () => {
 if(arr1[0]==ph && arr1[1]==a.innerText){
     // document.getElementById("img-container").innerText="fetchimage"
     // console.log("some Error");
+    document.getElementById("wish_msg1").innerText="GOOD MORNING !! WAKE UP !!"
+    document.getElementById("msg").innerHTML="GRAB SOME HEALTHY BREAKFAST !!!"
     document.getElementById("img-container").style.backgroundImage="url(./assets/images/gm.jpeg)"
    document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
    document.getElementById("img-container").style.backgroundSize = "cover"
 }
 else if(arr2[0]==ph && arr2[1]==a.innerText){
+    document.getElementById("wish_msg1").innerText="GOOD AFTERNOON !! TAKE SOME SLEEP!!"
+    document.getElementById("msg").innerHTML="LETS HAVE SOME LUNCH !!!"
     document.getElementById("img-container").style.backgroundImage="url(./assets/images/gf.jpeg)"
     document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
     document.getElementById("img-container").style.backgroundSize = "cover"
 }
 else if(arr3[0]==ph && arr3[1]==a.innerText){
+    document.getElementById("wish_msg1").innerText="GOOD EVENING !!!"
+    document.getElementById("msg").innerHTML="STAY YAWNING,GET SOME TEA.. ITS JUST EVENING!"
     document.getElementById("img-container").style.backgroundImage="url(./assets/images/goodeve.jpg)"
     document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
     document.getElementById("img-container").style.backgroundSize = "cover"
 }
 else if(arr4[0]==ph && arr4[1]==a.innerText){
+    document.getElementById("wish_msg1").innerText="GOOD NIGHT !!!"
+    document.getElementById("msg").innerHTML="CLOSE YOUR EYES AND GO TO SLEEP..."
     document.getElementById("img-container").style.backgroundImage="url(./assets/images/gn.jpeg)"
     document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
     document.getElementById("img-container").style.backgroundSize = "cover"
 }
 else{
+    document.getElementById("wish_msg1").innerText="WELCOME TO DIGITAL CLOCK !!!"
+    document.getElementById("msg").innerHTML="PLEASE SELECT TIME !!! "
     document.getElementById("img-container").style.backgroundImage = "url(./assets/images/wel5.jpg)"
     document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
     document.getElementById("img-container").style.backgroundSize = "cover"
