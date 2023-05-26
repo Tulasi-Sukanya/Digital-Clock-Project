@@ -4,11 +4,13 @@
 body{
     background: #3d087b 0% 0% no-repeat padding-box;
     background: #3D087B no-repeat padding-box;
+    height: fit-content;
 }
+
 .logo{
     position: absolute;
     top: 50px;
-    left: 105px;
+    left: 125px;
     width: 250px;
     height: 150px;
     background:url(./assets/images/clocklogo.png) 0% 0% no-repeat padding-box;
@@ -17,10 +19,10 @@ body{
 .time_shedule{
     position: absolute;
     top: 140px;
-    left: 100px;
+    left: 125px;
     height: 280px;
     width: 500px;
-    padding: 15px 60px;
+    padding: 25px 60px;
     background:#ffffff no-repeat padding-box;
     border: 1px solid #ededed;
     /* background: #FFFFFF no-repeat padding-box; */
@@ -121,7 +123,7 @@ option:hover{
 #wish_msg1{
     position: absolute;
     top: 450px;
-    left: 105px;
+    left: 125px;
     width: 490px;
     height: 49px;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -145,7 +147,7 @@ div + span{
 button{
     position: absolute;
     top: 530px;
-    left: 105px;
+    left: 125px;
     width: 200px;
     height: 35px;
     background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
@@ -168,8 +170,8 @@ button:hover span{
 }
 #shedule_msg{
     position:absolute;
-    top:510px;
-    left:327px;
+    top:520px;
+    left:349px;
     width: 265px;
     height: 90px;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -196,7 +198,7 @@ ul{
 #empty_div1{
     position: absolute;
     top: 88px;
-    left: 805px;
+    left: 835px;
     width: 360px;
     height: 60px;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -206,7 +208,7 @@ ul{
 #empty_div2{
     position: absolute;
     top: 59px;
-    left: 780px;
+    left: 815px;
     width: 416px;
     height: 80px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -216,7 +218,7 @@ ul{
 #time_div{
     position: absolute;
     top: 42px;
-    left: 750px;
+    left: 780px;
     width: 490px;
     height: 90px;
     border: 1px solid #ededed;
@@ -323,7 +325,7 @@ ul{
 #msg{
     position: absolute;
     top: 190px;
-    left: 750px;
+    left: 780px;
     width: 500px;
     height: 90px;
     background: #ffffff 0% 0% no-repeat padding-box;
@@ -337,11 +339,12 @@ ul{
     font: normal normal 900 22px/30px Bauhaus Hv BT;
     letter-spacing: 0px;
     color: #8E53F0;
+    text-align: center;
 }
 #img-container{
     position: absolute;
-    top: 300px;
-    left: 750px;
+    top: 315px;
+    left: 780px;
     border-radius: 10px;
     /* background-color: #fff; */
     opacity: 1;
@@ -351,11 +354,149 @@ ul{
     border-radius: 5px; 
     border: 2px solid white;
 }
-@media screen and (max-width:750px) and (min-width:360px) {
+@media screen and (max-width:950px) and (min-width:540px) {
+    .logo{
+        position: absolute;
+        top: 50px;
+        left: 285px;
+        width: 250px;
+        height: 150px;
+        background:url(./assets/images/clocklogo.png) 0% 0% no-repeat padding-box;
+        opacity: 1; 
+    }
+    .time_shedule{
+        position: absolute;
+        top: 380px;
+        left: 105px;
+        height: 280px;
+        width: 500px;
+        padding: 25px 60px;
+        background:#ffffff no-repeat padding-box;
+        border: 1px solid #ededed;
+        /* background: #FFFFFF no-repeat padding-box; */
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+    }
+    #wish_msg1{
+        position: absolute;
+        top: 680px;
+        left: 105px;
+        width: 490px;
+        height: 49px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding: 10px;
+        letter-spacing: 0;
+        text-align: center;
+        font: normal normal 900 22px/30px Bauhaus Hv BT;
+        letter-spacing: 0px;
+        color: #8E53F0;
+    }
+    button{
+        position: absolute;
+        top: 760px;
+        left: 105px;
+        width: 200px;
+        height: 35px;
+        background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        color:#fff;
+        font: normal normal 50 20px/15px Manrope;
+        letter-spacing: 0px;
+        opacity: 1;
+        padding: 1px;
+    }
+    #shedule_msg{
+        position:absolute;
+        top:750px;
+        left:339px;
+        width: 265px;
+        height: 90px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding-top: 10px;
+        padding-left: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        font: bold bold 100 22px/30px;
+        letter-spacing: 0px;
+        color: #8E53F0;
+        font:normal normal bold 14px/20px manrope;
+    }
+    #empty_div1{
+        position: absolute;
+        top: 118px;
+        left: 155px;
+        width: 360px;
+        height: 60px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 0.22;
+    }
+    #empty_div2{
+        position: absolute;
+        top: 128px;
+        left: 125px;
+        width: 416px;
+        height: 80px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 0.71;
+    }
+    #time_div{
+        position: absolute;
+        top: 138px;
+        left: 105px;
+        width: 490px;
+        height: 90px;
+        border: 1px solid #ededed;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+    }
+    #msg{
+        position: absolute;
+        top: 260px;
+        left: 110px;
+        width: 500px;
+        height: 90px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding: 10px;
+        letter-spacing: 0;
+        color: #8e53f0;
+        text-align: left;
+        font: normal normal 900 22px/30px Bauhaus Hv BT;
+        letter-spacing: 0px;
+        color: #8E53F0;
+        text-align: center;
+    }
+    #img-container{
+        position: absolute;
+        top: 880px;
+        left: 80px;
+        border-radius: 10px;
+        /* background-color: #fff; */
+        opacity: 1;
+        /* border: 2px solid white; */
+        height:300px;
+        width:500px; 
+        border-radius: 5px; 
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:550px) and (min-width:360px) {
     .logo{
         position: absolute;
         top: 30px;
-        left: 95px;
+        left: 155px;
         width: 200px;
         height: 100px;
         background:url(./assets/images/clocklogo.png) 0% 0% no-repeat padding-box;
@@ -364,7 +505,7 @@ ul{
     .time_shedule{
         position: absolute;
         top: 160px;
-        left: 30px;
+        left: 80px;
         height: 280px;
         width: 260px;
         padding: 15px 60px;
@@ -373,9 +514,6 @@ ul{
         border-radius: 10px;
     }
     select{
-        /* position: absolute;
-        top:38px;
-        left:80px; */
         margin-left: 14px;
         width: 100px;
         background:#ffffff 0% 0% no-repeat padding-box;
@@ -441,7 +579,7 @@ ul{
     #wish_msg1{
         position: absolute;
         top: 465px;
-        left: 30px;
+        left: 80px;
         width: 260px;
         height: 45px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -465,8 +603,8 @@ ul{
     button{
         position: absolute;
         top: 530px;
-        left: 70px;
-        width: 200px;
+        left: 80px;
+        width: 260px;
         height: 35px;
         background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
         border-radius: 4px;
@@ -489,7 +627,7 @@ ul{
     #shedule_msg{
         position:absolute;
         top:580px;
-        left:50px;
+        left:90px;
         width: 250px;
         height: 90px;
         background: #ffffff 0% 0% no-repeat padding-box;
@@ -512,6 +650,248 @@ ul{
         list-style-type: none;
         padding: 1px 10px;
         margin-top: 2px;
+    }
+    #empty_div1{
+        position: absolute;
+        top: 80px;
+        left: 85px;
+        width: 260px;
+        height: 60px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 0.22;
+    }
+    #empty_div2{
+        position: absolute;
+        top: 85px;
+        left: 70px;
+        width: 276px;
+        height: 60px;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        opacity: 0.71;
+    }
+    #time_div{
+        position: absolute;
+        top: 90px;
+        left: 65px;
+        width: 276px;
+        height: 60px;
+        border: 1px solid #ededed;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        line-break: normal;
+    }
+    .time{
+        padding-top: 19px;
+        padding-left: 15px;
+        font: normal normal 600 13px/15px manrope;
+        letter-spacing: 0px;
+        color: #3D087B;
+        opacity: 1;
+    }
+    #hrs{
+        position: absolute;
+        top: 10px;
+        left: 70px;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        background: transparent url(./assets/images/timeline.svg) 0% 0% no-repeat padding-box;
+        padding:15px;
+        font-size: 15px;
+        line-break: normal;
+    }
+    #min{
+        position: absolute;
+        top: 10px;
+        left: 120px;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        background: transparent url(./assets/images/timeline.svg) 0% 0% no-repeat padding-box;
+        padding:15px;
+        font-size: 15px;
+        line-break: normal;
+    }
+    #sec{
+        position: absolute;
+        top: 10px;
+        left: 170px;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        background: transparent url(./assets/images/timeline.svg) 0% 0% no-repeat padding-box;
+        padding:15px;
+        font-size: 15px;
+        line-break: normal;
+    }
+    #ampm{
+        position: absolute;
+        top: 10px;
+        left: 220px;
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        background: transparent url(./assets/images/ampm.png) 0% 0% no-repeat padding-box;
+        padding-top:15px;
+        padding-left: 8px;
+        font-size: 15px;
+        color:#fff;
+        font:normal normal normal Barlow;
+    }
+    .time #onecolon{
+        position: absolute;
+        top:27px;
+        left:113px;
+        font-weight:bold;
+        font-size: 15px;
+        color: #3D087B;
+    }
+    .time #twocolon{
+        position: absolute;
+        top:27px;
+        left:162px;
+        font-weight:bold;
+        font-size: 15px;
+        color: #3D087B;
+    }
+    #hrs_name{
+        position: absolute;
+        top:40px;
+        left: 78px;
+        font-size: 8px;
+        text-align: center;
+    }
+    #min_name{
+        position: absolute;
+        top:40px;
+        left: 135px;
+        font-size: 8px;
+        text-align: center;
+    }
+    #sec_name{
+        position: absolute;
+        top:40px;
+        left: 182px;
+        font-size: 8px;
+        text-align: center;
+    }
+    #msg{
+        position: absolute;
+        top: 690px;
+        left: 80px;
+        width: 290px;
+        height: 50px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding: 15px;
+        letter-spacing: 0;
+        color: #8e53f0;
+        text-align: left;
+        font: normal normal 900 15px/15px Bauhaus Hv BT;
+        letter-spacing: 0px;
+        color: #8E53F0;
+    }
+    #img-container{
+        position: absolute;
+        top: 750px;
+        left: 80px;
+        border-radius: 10px;
+        /* background-color: #fff; */
+        opacity: 1;
+        /* border: 2px solid white; */
+        height:270px;
+        width:270px; 
+        border-radius: 5px; 
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:850) and (min-width:551px) {
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 155px;
+        width: 200px;
+        height: 100px;
+        background:url(./assets/images/clocklogo.png) 0% 0% no-repeat padding-box;
+        opacity: 1; 
+    }
+    .time_shedule{
+        position: absolute;
+        top: 160px;
+        left: 30px;
+        height: 280px;
+        width: 260px;
+        padding: 15px 60px;
+        background:#ffffff no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+    }
+    select{
+        /* position: absolute;
+        top:38px;
+        left:80px; */
+        margin-left: 14px;
+        width: 100px;
+        background:#ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 4px;
+        opacity:1;
+    }
+    #wish_msg1{
+        position: absolute;
+        top: 465px;
+        left: 30px;
+        width: 260px;
+        height: 45px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding: 13px;
+        letter-spacing: 0;
+        text-align: center;
+        font: normal normal 900 13px/10px Bauhaus Hv BT;
+        letter-spacing: 0px;
+        color: #8E53F0;
+    }
+    button{
+        position: absolute;
+        top: 530px;
+        left: 70px;
+        width: 200px;
+        height: 35px;
+        background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%) 0% 0% no-repeat padding-box;
+        border-radius: 4px;
+        color:#fff;
+        font: normal normal 50 20px/15px Manrope;
+        letter-spacing: 0px;
+        opacity: 1;
+        padding: 1px;
+    }
+    #shedule_msg{
+        position:absolute;
+        top:580px;
+        left:50px;
+        width: 250px;
+        height: 90px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #EDEDED;
+        border-radius: 10px;
+        opacity: 1;
+        padding-top: 10px;
+        padding-left: 20px;
+        letter-spacing: 0;
+        text-align: left;
+        font: bold bold 100 22px/30px;
+        letter-spacing: 0px;
+        color: #8E53F0;
+        font:normal normal bold 14px/20px manrope;
     }
     #empty_div1{
         position: absolute;
@@ -663,9 +1043,7 @@ ul{
         top: 750px;
         left: 40px;
         border-radius: 10px;
-        /* background-color: #fff; */
         opacity: 1;
-        /* border: 2px solid white; */
         height:270px;
         width:270px; 
         border-radius: 5px; 

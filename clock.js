@@ -30,19 +30,20 @@ function displayTime(){
     document.getElementById("min").innerHTML = min 
     document.getElementById("sec").innerHTML = sec
     // based on clock messages for morning,afternoon,evening and night..
-    // if((hrs >= 0 && hrs < 12 ) && a === "AM"){
+    // if((hrs >= 0 && hrs < 12 ) && a === "AM")
+    // if((hrs === 12 && a === "AM") && (hrs <= 11 && a === "AM")){
     //     var msg = "GRAB SOME HEALTHY BREAKFAST !!!";
     //     // var wish = "GOOD MORNING !! WAKE UP !!"
     // }
-    // if((hrs >= 12 && hrs <= 3) && a === "PM"){
+    // else if((hrs >= 12 && hrs <= 3) && a === "PM"){
     //     var msg = "LETS HAVE SOME LUNCH !!!";
     //     // var wish = "GOOD AFTERNOON !! TAKE SOME SLEEP!!"
     // }
-    // if((hrs >= 4 && hrs <= 6) && a === "PM"){
+    // else if((hrs >= 4 && hrs <= 6) && a === "PM"){
     //     var msg = "STAY YAWNING,GET SOME TEA.. ITS JUST EVENING!";
     //     // var wish = "GOOD EVENING !!!"
     // }
-    // if((hrs >= 7 && hrs <= 11) && a === "PM"){
+    // else if((hrs >= 7 && hrs <= 11) && a === "PM"){
     //     var msg = "CLOSE YOUR EYES AND GO TO SLEEP...";
     //     // var wish = "GOOD NIGHT !!"
     // }
@@ -103,8 +104,8 @@ else if(arr4[0]==ph && arr4[1]==a.innerText){
 }
 else{
     document.getElementById("wish_msg1").innerText="WELCOME TO DIGITAL CLOCK !!!"
-    document.getElementById("msg").innerHTML="PLEASE SELECT TIME !!! "
-    document.getElementById("img-container").style.backgroundImage = "url(./assets/images/wel5.jpg)"
+    document.getElementById("msg").innerHTML=" PLEASE SELECT TIME !!! "
+    document.getElementById("img-container").style.backgroundImage = "url(./assets/images/wel3.jpg)"
     document.getElementById("img-container").style.backgroundRepeat = "no-repeat"
     document.getElementById("img-container").style.backgroundSize = "cover"
 }
